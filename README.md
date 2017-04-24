@@ -17,10 +17,10 @@ For a helpful graphical representation of the general steps for accessioning ele
     *   If preferable, file paths do not need to be typed out.  You may alternatively drag and drop the desired directory into the terminal window to type out the path to that directory.
 *   File management  
     *   Naming conventions for accession folder:
-        *   Folders containing individual files (not disk images) should be given titles consisting of the accession number followed by **-bag** (e.g. 2012-13.ua.028-bag).
-        *   Folders containing disk images should be given titles consisting of the accession number followed by **-unproc-images-bag** (e.g. 2011-12.ms.005-unproc-images-bag).
-    *   It is assumed that new accessions will be stored in appropriately named accession folders (as described above) on the FRED's RAID (/media/bcadmin/RAID#1) while in process.  If the files are stored elsewhere, amend the file paths provided below.
-    *   Similarly, it is assumed that bagged and tarred accessions will be transferred to the electronic-records folder on the sam mount (/mnt/sam/archiveimages/electronic-records), but if this is not the case, amend the examples provided below.  
+        *   Folders containing individual files (not disk images) should be given titles consisting of the accession number followed by **-bag** (e.g. `2012-13.ua.028-bag`).
+        *   Folders containing disk images should be given titles consisting of the accession number followed by **-unproc-images-bag** (e.g. `2011-12.ms.005-unproc-images-bag`).
+    *   It is assumed that new accessions will be stored in appropriately named accession folders (as described above) on the FRED's RAID (`/media/bcadmin/RAID#1`) while in process.  If the files are stored elsewhere, amend the file paths provided below.
+    *   Similarly, it is assumed that bagged and tarred accessions will be transferred to the electronic-records folder on the sam mount (`/mnt/sam/archiveimages/electronic-records`), but if this is not the case, amend the examples provided below.  
 
 **Mounting the GDrive in BitCurator**
 
@@ -77,7 +77,7 @@ After the bag is created, verify the generated bag with the following:
 $ bagit.py --validate /media/bcadmin/RAID#1/Images/[accessionnumber-bag]
 ```
 
-After creating the bag, make a copy of the manifest-md5.txt file and move it to the appropriate accession folder on the G: drive.  Append the accession number to the front of the file name, changing the name to something like "2016-17.ms.001-manifest-md5.txt".
+After creating the bag, make a copy of the manifest-md5.txt file and move it to the appropriate accession folder on the G: drive.  Append the accession number to the front of the file name, changing the name to something like `2016-17.ms.001-manifest-md5.txt`.
 
 **Tar**
 
@@ -105,7 +105,7 @@ Again, there are many options that may be set, but the following should be most 
 
 **Rsync**
 
-**NOTE:** If you will be transferring more than 1TB of content at any one time, please alert SAM Sys Admins to ensure sufficient tape storage is available!
+**NOTE:** If you will be transferring more than 1TB of content at any one time, please alert **SAM Sys Admins** to ensure sufficient tape storage is available!
 
 While it is possible to simply drag and drop the tarred bag from the FRED's RAID to the SAM, this is less than desirable (especially for larger bags) because all progress will be lost if, for some reason, the connection with SAM is lost during the transfer.  Therefore, it is best to use [rsync](http://linuxcommand.org/man_pages/rsync1.html) to transfer files.  Open a terminal window within BitCurator and type the following:
 
