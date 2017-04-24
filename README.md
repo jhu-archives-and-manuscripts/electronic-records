@@ -1,37 +1,35 @@
-# electronic-records
-Electronic records accessioning workflow
+# Electronic records accessioning workflow
 
 Note: The following should be considered a "scratchpad" for notes relating to the evolution of electronic records accessioning workflows.  Please consult with Lora to confirm the accuracy and completeness of these notes at any given time.
 
 **Visual Overview**
 
-For a helpful graphical representation of the general steps for accessioning electronic records, see the <ac:link><ri:attachment ri:filename="20160427born_digital_workflow.jpg"><ac:plain-text-link-body></ac:plain-text-link-body></ri:attachment></ac:link>. 
+For a helpful graphical representation of the general steps for accessioning electronic records, see the [OUTDATED Electronic records accessioning workflow](img/20160427born_digital_workflow.jpg). 
 
 **General Assumptions**
 
 *   BitCurator/FRED
     *   Generally speaking, these instructions assume you are booting into BitCurator on the FRED workstation.
 *   Using the terminal
-    *   When providing examples of a file path, a syntax such as /path/to/file has been used.  Change this to whatever is appropriate.
-    *   In example file paths, information supplied within square brackets [ ] should be replaced with the relevant text.
-    *   When needing to navigate to a file path where a directory of file name includes spaces, these spaces can be escaped with "\ ".  So, for example, JHU Client Drive should be entered as JHU\ Client\ Drive.
+    *   When providing examples of a file path, a syntax such as `/path/to/file` has been used.  Change this to whatever is appropriate.
+    *   In example file paths, information supplied within square brackets `[ ]` should be replaced with the relevant text.
+    *   When needing to navigate to a file path where a directory of file name includes spaces, these spaces can be escaped with `"\ "`.  So, for example, JHU Client Drive should be entered as `JHU\ Client\ Drive`.
     *   If preferable, file paths do not need to be typed out.  You may alternatively drag and drop the desired directory into the terminal window to type out the path to that directory.
 *   File management  
-
     *   Naming conventions for accession folder:
-
         *   Folders containing individual files (not disk images) should be given titles consisting of the accession number followed by **-bag** (e.g. 2012-13.ua.028-bag).
-
         *   Folders containing disk images should be given titles consisting of the accession number followed by **-unproc-images-bag** (e.g. 2011-12.ms.005-unproc-images-bag).
-
     *   It is assumed that new accessions will be stored in appropriately named accession folders (as described above) on the FRED's RAID (/media/bcadmin/RAID#1) while in process.  If the files are stored elsewhere, amend the file paths provided below.
     *   Similarly, it is assumed that bagged and tarred accessions will be transferred to the electronic-records folder on the sam mount (/mnt/sam/archiveimages/electronic-records), but if this is not the case, amend the examples provided below.  
 
 **Mounting the GDrive in BitCurator**
 
-The GDrive is _not _set to automatically mount on startup within BitCurator, however, a shell script has been written to accomplish this task.  To run the script:
+The GDrive is *not set* to automatically mount on startup within BitCurator, however, a shell script has been written to accomplish this task.  To run the script:
 
-<ac:structured-macro ac:name="code" ac:schema-version="1" ac:macro-id="3f0da204-7f2c-4995-b9f8-12922b32cc81"><ac:parameter ac:name="language">text</ac:parameter><ac:plain-text-body></ac:plain-text-body></ac:structured-macro>
+```bash
+cd Desktop
+sudo ./mountSpecCollImages.sh
+```
 
 **Disk Imaging** (_Physical media only)_
 
