@@ -128,8 +128,8 @@ ArchivesSpace events are based on [PREMIS Event Types](http://id.loc.gov/vocabul
 
 |Event Type     |Usage|
 |---------------|-----|
-|capture        |Records the moment the repository actively obtains a digital object.
-                Specific examples: Records service (cloud, email, etc.) used to transfer the object; additional documentation relevant to the transfer. **Not** used to document the       transfer of the digital object to preservation storage (see: ingestion).|
+|capture        |Records the moment the repository actively obtains a digital object.|
+|               |Specific examples: Records service (cloud, email, etc.) used to transfer the object; additional documentation relevant to the transfer. **Not** used to document the       transfer of the digital object to preservation storage (see: ingestion).|
 |compression    |*(rarely used)*|
 |               |Records when and how a digital object is compressed.|
 |creation       |*(rarely used)*|
