@@ -128,34 +128,19 @@ ArchivesSpace events are based on [PREMIS Event Types](http://id.loc.gov/vocabul
 
 |Event Type     |Usage|
 |---------------|-----|
-|capture        |Records the moment the repository actively obtains a digital object.<br/>Specific examples: Records service (cloud, email, etc.) used to transfer the object; additional documentation relevant to the transfer. **Not** used to document the transfer of the digital object to preservation storage (see: ingestion).|
-|compression    |*(rarely used)*|
-|               |Records when and how a digital object is compressed.|
-|creation       |*(rarely used)*|
-|               |Records the creation of a new object.|
-|deaccession    |*(rarely used)*|
-|               |Self explanatory.|
-|decompression  |*(rarely used)*|
-|               |Records when and how a digital object is decompressed.|
-|decryption     |*(rarely used)*|
-|               |Records the conversion of encrypted data to plain text.|
-|deletion       |*(rarely used)*|
-|               |Records removal of a digital object.|
-|digital signature validation|*(rarely used)*|
-|               |Records that a digital signature matched the expected value.|
-|fixity check   |*(rarely used)*|
-|               |Records that an object has not changed in a given period.|
-|ingestion      |Records that a digital object has been transferred to a preservation repository.|
-|               |Specific examples: Used to record the moment a tarred and bagged accession is transferred to **SAM storage**.|
-|message digest calculation|Records the creation of a message digest ("hash").|
-|               |Specific examples: Used to record the **bagging** of a digital item.|
-|migration      |*(rarely used)*|
-|               |Records the transformation of an object to a different format. Differs from normalization because the migration happens due to pending threat of format obsolescence.|
-|normalization  |Records the transformation of an object to a more preservation-worthy version.|
-|               |Specific examples: **Normalizing** proprietary Outlook PST to MBox using ReadPST.|
-|replication    |Records the creation of a bit-level copy of a digital object.|
-|               |Specific examples: Used to record the creation of a **disk image**.|
-|validation     |Records the outcome of comparing a digital object to a given standard and noting compliance or exceptions.|
-|               |Specific examples: Used to record format **validation** such as that done via JHOVE.|
-|virus check    |Records the outcome of a virus scan.|
-|               |Specific examples: Used to record **virus scan**. Record a "pass" value for this event type.|
+|capture        |Records the moment the repository actively obtains a digital object. <br/>Specific examples: Records service (cloud, email, etc.) used to transfer the object; additional documentation relevant to the transfer. **Not** used to document the transfer of the digital object to preservation storage (see: ingestion).|
+|compression    |*(rarely used)*<br/> Records when and how a digital object is compressed.|
+|creation       |*(rarely used)*<br/> Records the creation of a new object.|
+|deaccession    |*(rarely used)*<br/> Self explanatory.|
+|decompression  |*(rarely used)*<br/> Records when and how a digital object is decompressed.|
+|decryption     |*(rarely used)*<br/> Records the conversion of encrypted data to plain text.|
+|deletion       |*(rarely used)*<br/> Records removal of a digital object.|
+|digital signature validation|*(rarely used)*<br/> Records that a digital signature matched the expected value.|
+|fixity check   |*(rarely used)*<br/> Records that an object has not changed in a given period.|
+|ingestion      |Records that a digital object has been transferred to a preservation repository.<br/> Specific examples: Used to record the moment a tarred and bagged accession is transferred to **SAM storage**.|
+|message digest calculation|Records the creation of a message digest ("hash").<br/> Specific examples: Used to record the **bagging** of a digital item.|
+|migration      |*(rarely used)*<br/> Records the transformation of an object to a different format. Differs from normalization because the migration happens due to pending threat of format obsolescence.|
+|normalization  |Records the transformation of an object to a more preservation-worthy version.<br/> Specific examples: **Normalizing** proprietary Outlook PST to MBox using ReadPST.|
+|replication    |Records the creation of a bit-level copy of a digital object.<br/> Specific examples: Used to record the creation of a **disk image**.|
+|validation     |Records the outcome of comparing a digital object to a given standard and noting compliance or exceptions.<br/> Specific examples: Used to record format **validation** such as that done via JHOVE.|
+|virus check    |Records the outcome of a virus scan.<br/> Specific examples: Used to record **virus scan**. Record a "pass" value for this event type.|
